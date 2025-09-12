@@ -7,6 +7,7 @@ alias sudo="sudo "
 alias v="nvim"
 alias vim="nvim"
 alias tm="tmux new-session -A -s main"
+alias tm="tmux new-session -A -s main"
 alias v=nvim
 alias vim=nvim
 alias vimdiff="nvim -d"
