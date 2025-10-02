@@ -3,8 +3,9 @@ Description=tmux session for user '%u'
 After=graphical-session.target
 
 [Service]
-Type=forking
-ExecStart=/usr/bin/tmux new-session -s %u -d
+Type=simple
+Restart=always
+ExecStart=/usr/bin/tmux new-session -s %u
 ExecStop=/usr/bin/tmux kill-session -t %u
 
 [Install]
