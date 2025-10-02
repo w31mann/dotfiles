@@ -28,3 +28,10 @@ export PATH="${PATH}:${HOMEBREW_PREFIX}/sbin"
 export PATH="${PATH}:${HOMEBREW_PREFIX}/opt/libtool/libexec/gnubin"
 
 source "$HOME/.cargo/env"
+export STARSHIP_CONFIG="${HOME}/.config/zsh/starship.toml"
+
+export OGL_DEDICATED_HW_STATE_PER_CONTEXT="ENABLE_ROBUST"
+
+export TAVILY_API_KEY="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"
+export GOOGLE_SEARCH_API_KEY="AIzaSyB_kiqYa8XcqWszDzGaciP7dEg6iBOalUA"
+export GOOGLE_SEARCH_ENGINE_ID="aptiv"
