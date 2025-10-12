@@ -37,3 +37,11 @@ if [[ -z ${DISPLAY} && $(tty) = /dev/tty1 ]]; then
         exec uwsm start hyprland.desktop
     fi
 fi
+
+# start tmux session if opening kitty
+# ==================================================================================================
+
+if [[ "$TERM" == "xterm-kitty" ]]; then
+    # tmux new -A -s user
+    tmux new
+fi

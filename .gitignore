@@ -3,3 +3,5 @@ zsh/.config/zsh/.zsh_history
 zsh/.config/zsh/.zsh_sessions
 zsh/.config/zsh/.zdirs
 zsh/.config/zsh/.cache
+
+**/tmux/plugins
