@@ -1737,6 +1737,7 @@ if zstyle -T ':grml:chpwd:dirstack' enable; then
         GRML_PERSISTENT_DIRSTACK=( "${dirstack[@]}" )
     fi
 fi
+<<<<<<< HEAD
 
 # directory based profiles
 

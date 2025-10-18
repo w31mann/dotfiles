@@ -11,3 +11,4 @@ alias tm="tmux new-session -A -s main"
 alias v=nvim
 alias vim=nvim
 alias vimdiff="nvim -d"
+alias tm="tmux new -s $(whoami)"
