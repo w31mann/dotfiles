@@ -18,6 +18,9 @@ source "${ZDOTDIR}/ls_colors"
 prompt off
 eval "$(starship init zsh)"
 
+# init zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
 # load "edit cmd line" widget
 autoload -z edit-command-line
 zle -N edit-command-line
