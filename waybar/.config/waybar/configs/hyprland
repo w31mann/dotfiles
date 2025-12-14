@@ -6,7 +6,7 @@
 
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/submap",
+        "hyprland/submap"
     ],
     "modules-center": [
         "hyprland/window"
@@ -82,10 +82,10 @@
         "format-icons": [ "" ]
     },
     "network": {
-        "interface": "enp12s0", // (Optional)
+        "interface": "enp12s0",
         "format-ethernet": "{bandwidthDownBytes}   {bandwidthUpBytes} ",
         "tooltip-format": "{ifname} via {gwaddr} 󰛳",
-        "format-linked": "{ifname} (No IP) 󰛳",
+        //"format-linked": "{ifname} (No IP) 󰛳",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "interval": 1
