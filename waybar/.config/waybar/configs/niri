@@ -26,7 +26,8 @@
         "all-outputs": true
     },
     "niri/window": {
-        "format": "{title}",
+        "icon": true,
+        "icon-size": 20,
         "max-length": 60
     },
     "idle_inhibitor": {
