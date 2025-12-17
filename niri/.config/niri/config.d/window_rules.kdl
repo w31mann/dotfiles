@@ -1,0 +1,54 @@
+// Window rules let you adjust behavior for individual windows.
+// Find more information on the wiki:
+// https://yalter.github.io/niri/Configuration:-Window-Rules
+
+window-rule {
+    geometry-corner-radius 6
+    clip-to-geometry true
+}
+
+window-rule {
+    match is-window-cast-target=true
+
+    focus-ring {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+
+    border {
+        inactive-color "#7d0d2d"
+    }
+
+    shadow {
+        color "#7d0d2d70"
+    }
+
+    tab-indicator {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+}
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    match app-id=r#"librewolf$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"kitty-startup$"#
+    open-on-workspace "1"
+    default-column-width { proportion 0.90; }
+}
+
+window-rule {
+    match app-id=r#"brave-startup$"#
+    open-on-workspace "2"
+    open-maximized true
+}
+
+window-rule {
+    match app-id=r#"org.mozilla.Thunderbird$"#
+    open-on-workspace "3"
+    default-column-width { proportion 0.90; }
+}

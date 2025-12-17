@@ -1,0 +1,42 @@
+// Settings that influence how windows are positioned and sized.
+// Find more information on the wiki:
+// https://yalter.github.io/niri/Configuration:-Layout
+layout {
+    gaps 10
+
+    background-color "#000000"
+    center-focused-column "never"
+    always-center-single-column
+
+    preset-column-widths {
+        proportion 0.5
+        proportion 0.75
+        proportion 0.90
+    }
+
+    preset-window-heights {
+        proportion 0.5
+        proportion 0.75
+        proportion 1.00
+    }
+
+    default-column-width { proportion 0.50; }
+
+    focus-ring {
+        width 1
+
+        active-color "#b7bdf8"
+        inactive-color "#505050"
+        urgent-color "#9b0000"
+    }
+
+    // You can also add a border. It's similar to the focus ring, but always visible.
+    border {
+        on
+
+        width 1
+        active-color "#b7bdf8"
+        inactive-color "#505050"
+        urgent-color "#9b0000"
+    }
+}

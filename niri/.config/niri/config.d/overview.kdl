@@ -1,0 +1,10 @@
+overview {
+    backdrop-color "#11111b"
+}
+
+recent-windows {
+    highlight {
+        active-color "#9399b2bb"
+        urgent-color "#9b0000ff"
+    }
+}
