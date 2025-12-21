@@ -27,6 +27,13 @@ hotkey-overlay {
     skip-at-startup
 }
 
+gestures {
+    hot-corners {
+        off
+        // bottom-left
+    }
+}
+
 prefer-no-csd
 
 screenshot-path "~/tmp/screenshot_%Y-%m-%d_%H-%M-%S.png"

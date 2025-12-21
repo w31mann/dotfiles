@@ -9,10 +9,10 @@ binds {
     Mod+I       hotkey-overlay-title="Open Brave" { spawn "brave" "--hide-crash-restore-bubble"; }
     Mod+Shift+I hotkey-overlay-title="Open Brave (Incognito)" { spawn "brave" "--hide-crash-restore-bubble" "--incognito"; }
     Mod+M       hotkey-overlay-title="Open Thunderbird" { spawn "thunderbird"; }
-    Mod+Space   hotkey-overlay-title="Open Application Launcher" {spawn "wofi" "--show run"; }
+    Mod+Space   hotkey-overlay-title="Open Application Launcher" {spawn "wofi"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+" "-l" "1.0"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-" "-l" "0.0"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+" "-l" "1.0"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-" "-l" "0.0"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
