@@ -17,6 +17,7 @@ source "${ZDOTDIR}/ls_colors"
 # grml + starship config: https://github.com/starship/starship/issues/4198
 prompt off
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # load "edit cmd line" widget
 autoload -z edit-command-line
