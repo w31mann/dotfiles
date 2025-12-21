@@ -31,7 +31,6 @@ hotkey-overlay {
 gestures {
     hot-corners {
         off
-        // bottom-left
     }
 }
 

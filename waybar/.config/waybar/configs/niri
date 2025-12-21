@@ -30,15 +30,10 @@
         "icon-size": 20,
         "max-length": 60
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "tray": {
-        "spacing": 0
+        "spacing": 10,
+        "icon-size": 18,
+        "show-passive-items": true
     },
     "clock": {
         "format": "{:%a %b %d %H:%M}",

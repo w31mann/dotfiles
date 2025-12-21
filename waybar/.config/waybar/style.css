@@ -55,18 +55,9 @@
 }
 
 #tray {
-    margin: 4px;
-    border-radius: 4px;
-    background-color: @base;
-}
-
-#tray * {
+    margin: 4px 2px;
     padding: 0 6px;
-    border-left: 1px solid @base;
-}
-
-#tray *:first-child {
-    border-left: none;
+    border: 2px solid transparent;
 }
 
 #mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #temperature, #language {
