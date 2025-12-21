@@ -1,13 +1,16 @@
-// Starting waybar with systemd.
-//
+// Start long running services via systemd:
+
 // systemctl --user add-wants niri.service waybar@niri.service
-// systemctl --user add-wants niri.service hyprpolkitagent.service
+// systemctl --user add-wants niri.service polkit-agent.service
 // systemctl --user add-wants niri.service swaybg.service
 // systemctl --user add-wants niri.service swayidle.service
 //
 // This will create links in ~/.config/systemd/user/niri.service.wants/, a special systemd folder
 // for services that need to start together with niri.service.
+//
+// Currently, using xdg-desktop-portal + xdg-desktop-portal-wlr which are both started
+// automatically. Niri proposes xdg-desktop-protal-gnome for a full featured experience, though.
 
-spawn-at-startup "kitty" "--class=kitty-startup"
-spawn-at-startup "brave" "--class=brave-startup" "--hide-crash-restore-bubble"
+spawn-at-startup "kitty"
+spawn-at-startup "brave" "--hide-crash-restore-bubble"
 spawn-at-startup "thunderbird"

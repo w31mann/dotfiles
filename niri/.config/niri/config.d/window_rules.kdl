@@ -29,28 +29,33 @@ window-rule {
     }
 }
 
-// Open the Firefox picture-in-picture player as floating by default.
 window-rule {
-    match app-id=r#"librewolf$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
-window-rule {
-    match app-id=r#"kitty-startup$"#
+    match app-id=r#"kitty$"# at-startup=true
     open-on-workspace "1"
     default-column-width { proportion 0.90; }
 }
 
 window-rule {
-    match app-id=r#"brave-startup$"#
+    match app-id=r#"brave-browser$"# at-startup=true
     open-on-workspace "2"
+}
+
+window-rule {
+    match app-id=r#"^org\.mozilla\.Thunderbird$"# title="Mozilla Thunderbird$" at-startup=true
+    open-on-workspace "3"
+}
+
+window-rule {
+    match app-id="brave-browser$"
+    match app-id=r#"^org\.mozilla\.Thunderbird$"# title="Mozilla Thunderbird$"
+    match app-id="spotify$"
     open-maximized true
 }
 
 window-rule {
-    match app-id=r#"org.mozilla.Thunderbird$"#
-    open-on-workspace "3"
-    default-column-width { proportion 0.90; }
+    match app-id=r#"kitty$"# at-startup=false
+    match app-id=r#"org\.mozilla\.Thunderbird$"# title="^Write"
+    default-column-width { proportion 0.50; }
 }
 
 window-rule {
@@ -59,4 +64,10 @@ window-rule {
     default-column-width { proportion 0.33; }
     default-window-height { proportion 0.33; }
     default-floating-position x=10 y=0 relative-to="right"
+}
+
+window-rule {
+    match app-id=r#"librewolf$"# title="^Picture-in-Picture$"
+    match app-id="lxqt-policykit-agent$"
+    open-floating true
 }

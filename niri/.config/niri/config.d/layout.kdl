@@ -20,7 +20,7 @@ layout {
         proportion 1.00
     }
 
-    default-column-width { proportion 0.50; }
+    default-column-width { proportion 0.90; }
 
     focus-ring {
         width 1

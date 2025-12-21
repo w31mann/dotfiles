@@ -8,6 +8,7 @@
 // https://yalter.github.io/niri/Configuration:-Input
 input {
     focus-follows-mouse max-scroll-amount="0%"
+    warp-mouse-to-focus
 }
 
 cursor {
