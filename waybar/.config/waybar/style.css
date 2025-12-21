@@ -26,7 +26,21 @@
     background-color: @base;
     min-width: 20px;
     border-radius: 1px;
-    border-bottom: 2px solid @base;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+#workspaces button:hover {
+    color: @text;
+    background: @base;
+    background-color: @base;
+    background-image: none;
+    border-top: 2px solid @lavender;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
 }
 
 #workspaces button.visible {
