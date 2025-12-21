@@ -11,7 +11,7 @@
     font-weight: 400;
 
     color: @text;
-    background-color: shade(@base, 0.9);
+    background-color: @base;
     border: 2px solid alpha(@crust, 0.3);
 }
 
@@ -26,48 +26,36 @@
     background-color: @base;
     min-width: 20px;
     border-radius: 1px;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
+    border: 2px solid transparent;
 }
 
 #workspaces button:hover {
     color: @text;
-    background: @base;
-    background-color: @base;
+    background: @surface0;
+    background-color: @surface0;
     background-image: none;
-    border-top: 2px solid @lavender;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
+    border: 2px solid transparent;
 }
 
-#workspaces button.visible {
-}
-
-#workspaces button.active {
-    margin: 4px 2px;
-    padding: 0 6px;
-    color: @text;
-    background-color: @base;
-    min-width: 20px;
-    border-radius: 1px;
-    border-bottom: 2px solid @green;
-}
-
+#workspaces button.active,
 #workspaces button.urgent {
     margin: 4px 2px;
     padding: 0 6px;
     color: @text;
-    background-color: @base;
     min-width: 20px;
     border-radius: 1px;
+}
+
+#workspaces button.active {
+    border-bottom: 2px solid @green;
+}
+
+#workspaces button.urgent {
     border-bottom: 2px solid @red;
 }
 
 #tray {
-    margin: 4px 4px 4px 4px;
+    margin: 4px;
     border-radius: 4px;
     background-color: @base;
 }
@@ -94,32 +82,15 @@
     margin-left: 40px;
     margin-right: 4px;
     background-color: @base;
-    /* border-radius: 4px; */
     min-width: 20px;
     font-weight: 900;
-    /* border-radius: 1px; */
-    /* border-bottom: 2px solid @lavender; */
-}
-
-#pulseaudio.muted {
-}
-
-#pulseaudio.bluetooth {
 }
 
 #temperature.critical {
     color: @red;
 }
 
-#custom-vpn.up {
-    color: @text;
-    margin: 4px 2px;
-    padding: 0 6px;
-    background-color: @base;
-    min-width: 20px;
-    border-radius: 1px;
-    border-bottom: 2px solid @green;
-}
+#custom-vpn.up,
 #custom-vpn.down {
     color: @text;
     margin: 4px 2px;
@@ -127,6 +98,13 @@
     background-color: @base;
     min-width: 20px;
     border-radius: 1px;
+}
+
+#custom-vpn.up {
+    border-bottom: 2px solid @green;
+}
+
+#custom-vpn.down {
     border-bottom: 2px solid @base;
 }
 
@@ -137,7 +115,7 @@
 }
 
 #language {
-	font-size: 0.9em;
-	font-weight: 500;
-	letter-spacing: -1px;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: -1px;
 }
