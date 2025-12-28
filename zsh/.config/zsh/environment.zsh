@@ -3,10 +3,10 @@
 
 export SHELL="/usr/bin/zsh"
 export EDITOR=nvim
-export BROWSER="/usr/bin/brave"
 export SUDO_EDITOR="nvim"
-export DIFFPROG="nvim -d"
 export SYSTEMD_EDITOR=nvim
+export DIFFPROG="nvim -d"
+export BROWSER="/usr/bin/brave"
 
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-c"
