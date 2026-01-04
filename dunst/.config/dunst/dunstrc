@@ -1,25 +1,28 @@
 [global]
 frame_color = "#b4befe"
 separator_color = frame
-font = JetBrainsMono 12
+corner_radius = 5
+offset = (20, 50)
+font = FiraCode 12
 width = (300, 600)
 height = (100, 600)
 min_icon_size = 48
-max_icon_size = 128
+max_icon_size = 164
 frame_width = 2
 gap_size = 5
-icon_path = /usr/share/icons/Papirus-Dark/22x22/actions:/usr/share/icons/Papirus-Dark/22x22/emotes
 stack_duplicates = false
+enable_recursive_icon_lookup = true
+icon_theme = Papirus
 
 [urgency_low]
-background = "#24273a"
-foreground = "#cad3f5"
+background = "#1e1e2ed0"
+foreground = "#cdd6f4"
 
 [urgency_normal]
-background = "#24273a"
-foreground = "#cad3f5"
+background = "#1e1e2ed0"
+foreground = "#cdd6f4"
 
 [urgency_critical]
-background = "#24273a"
-foreground = "#cad3f5"
-frame_color = "#f5a97f"
+background = "#1e1e2ed0"
+foreground = "#cdd6f4"
+frame_color = "#f38ba8"
