@@ -15,7 +15,8 @@
         "custom/vpn",
         "cpu",
         "memory",
-        "temperature",
+        "custom/cpu-temp",
+        "custom/gpu-temp",
         "pulseaudio",
         "clock"
     ],
@@ -63,16 +64,10 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": true
     },
     "memory": {
         "format": "{}% "
-    },
-    "temperature": {
-        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-        "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": [ "" ]
     },
     "network": {
         "interface": "enp12s0",
@@ -89,13 +84,26 @@
         "on-click": "pavucontrol",
         "on-click-right": "~/.config/waybar/scripts/airpods-connect.sh"
     },
-
+    "custom/cpu-temp": {
+        "exec": "~/.config/waybar/scripts/cpu-temp.sh",
+        "return-type": "json",
+        "format": "{}°C ",
+        "interval": 5,
+        "tooltip": true,
+    },
+    "custom/gpu-temp": {
+        "exec": "~/.config/waybar/scripts/gpu-temp.sh",
+        "return-type": "json",
+        "format": "{}°C 󰏘",
+        "interval": 5,
+        "tooltip": true
+    },
     "custom/vpn": {
+        "exec": "~/.config/waybar/scripts/vpn-status.sh",
+        "on-click": "~/.config/waybar/scripts/vpn-toggle.sh",
         "return-type": "json",
         "format": "vpn {icon}",
         "format-icons": [ "󱕵" ],
-        "interval": 2,
-        "exec": "~/.config/waybar/scripts/vpn-status.sh",
-        "on-click": "~/.config/waybar/scripts/vpn-toggle.sh"
+        "interval": 2
     }
 }

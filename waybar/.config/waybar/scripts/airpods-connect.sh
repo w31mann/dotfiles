@@ -11,9 +11,9 @@ systemctl --user start pipewire-pulse.service
 sleep 2
 
 if bluetoothctl connect "$dev"; then
-    notify-send --icon=audio-volume-medium "Airpods connected"
+    notify-send --icon=blueman-headset "Airpods connected"
 else
-    notify-send --icon=audio-volume-medium --urgency=critical "Airpods connection failed"
+    notify-send --icon=dialog-error --urgency=critical "Airpods connection failed"
 fi
 
 bluetoothctl discoverable off || true

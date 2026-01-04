@@ -60,7 +60,7 @@
     border: 2px solid transparent;
 }
 
-#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #temperature, #language {
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #temperature, #custom-cpu-temp, #custom-gpu-temp, #custom-vpn, #language {
     margin: 4px 2px;
     padding: 0 6px;
     background-color: @base;
@@ -77,6 +77,8 @@
     font-weight: 900;
 }
 
+#custom-gpu-temp.critical,
+#custom-cpu-temp.critical,
 #temperature.critical {
     color: @red;
 }
