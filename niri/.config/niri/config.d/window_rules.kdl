@@ -30,6 +30,7 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"Alacritty$"# at-startup=true
     match app-id=r#"kitty$"# at-startup=true
     open-on-workspace "1"
     default-column-width { proportion 0.90; }
@@ -53,6 +54,7 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"Alacritty$"# at-startup=false
     match app-id=r#"kitty$"# at-startup=false
     match app-id=r#"org\.mozilla\.Thunderbird$"# title="^Write"
     default-column-width { proportion 0.50; }

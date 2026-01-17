@@ -5,7 +5,7 @@ binds {
 
     Mod+Shift+slash { show-hotkey-overlay; }
 
-    Mod+Return  hotkey-overlay-title="Open Kitty" { spawn "kitty"; }
+    Mod+Return  hotkey-overlay-title="Open Alacritty" { spawn "alacritty"; }
     Mod+I       hotkey-overlay-title="Open Brave" { spawn "brave" "--hide-crash-restore-bubble"; }
     Mod+Shift+I hotkey-overlay-title="Open Brave (Incognito)" { spawn "brave" "--hide-crash-restore-bubble" "--incognito"; }
     Mod+M       hotkey-overlay-title="Open Thunderbird" { spawn "thunderbird"; }
